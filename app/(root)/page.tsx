@@ -3,7 +3,7 @@ import { navLinks } from '@/constants';
 import { getAllImages } from '@/lib/actions/image.actions';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React, { Suspense } from 'react'
 
 const Home = async () => {
   // Define default values for page and searchQuery
@@ -36,12 +36,14 @@ const Home = async () => {
       </section>
 
       <section className="sm:mt-12">
+      <Suspense fallback={<div>Loading...</div>}>
         <Collection 
           hasSearch={true}
           images={images?.data}
           totalPages={images?.totalPage}
           page={page}
         />
+        </Suspense>
       </section>
     </>
   )
