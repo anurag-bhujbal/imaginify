@@ -7,10 +7,9 @@ import { redirect } from "next/navigation";
 import { Collection } from "@/components/shared/Collection";
 import Header from "@/components/shared/Header";
 
-const Profile = async ({ searchParams }: SearchParamProps) => {
-  // Await the searchParams to ensure they are resolved
-  const { page } = await searchParams;
-  const currentPage = Number(page) || 1; // Use the resolved page value
+const Profile = async () => {
+  // Set default page to 1
+  const currentPage = 1;
 
   const { userId } = await auth();
 

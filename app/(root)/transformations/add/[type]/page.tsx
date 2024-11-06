@@ -9,7 +9,7 @@ import { redirect } from 'next/navigation';
 
 type TransformationTypeKeys = keyof typeof transformationTypes;
 
-const AddTransformationTypePage = async ({ params }: { params: { type: TransformationTypeKeys } }) => {
+const AddTransformationTypePage = async ({ params }: { params: Promise<{ type: TransformationTypeKeys }> }) => {
   const { userId } = await auth();
   const { type } = await params;
   const transformation = transformationTypes[type];

@@ -1,4 +1,3 @@
-
 import { Collection } from '@/components/shared/Collection';
 import { navLinks } from '@/constants';
 import { getAllImages } from '@/lib/actions/image.actions';
@@ -6,13 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
-const Home = async ({ searchParams }: SearchParamProps) => {
-  const resolvedSearchParams = await searchParams;
+const Home = async () => {
+  // Define default values for page and searchQuery
+  const page = 1; // Default to page 1
+  const searchQuery = ''; // Default to an empty search query
 
-  const page = Number(resolvedSearchParams?.page) || 1;
-  const searchQuery = (resolvedSearchParams?.query as string) || '';
-
-  const images = await getAllImages({ page, searchQuery})
+  // Fetch images based on the default values
+  const images = await getAllImages({ page, searchQuery });
 
   return (
     <>
@@ -48,4 +47,4 @@ const Home = async ({ searchParams }: SearchParamProps) => {
   )
 }
 
-export default Home
+export default Home;
