@@ -29,16 +29,16 @@ export const navLinks = [
       route: "/transformations/add/removeBackground",
       icon: "/assets/icons/camera.svg",
     },
-    {
-      label: "Profile",
-      route: "/profile",
-      icon: "/assets/icons/profile.svg",
-    },
-    {
-      label: "Buy Credits",
-      route: "/credits",
-      icon: "/assets/icons/bag.svg",
-    },
+    // {
+    //   label: "Profile",
+    //   route: "/profile",
+    //   icon: "/assets/icons/profile.svg",
+    // },
+    // {
+    //   label: "Buy Credits",
+    //   route: "/credits",
+    //   icon: "/assets/icons/bag.svg",
+    // },
   ];
   
   export const plans = [
