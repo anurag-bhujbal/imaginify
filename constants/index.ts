@@ -29,11 +29,11 @@ export const navLinks = [
       route: "/transformations/add/removeBackground",
       icon: "/assets/icons/camera.svg",
     },
-    // {
-    //   label: "Profile",
-    //   route: "/profile",
-    //   icon: "/assets/icons/profile.svg",
-    // },
+    {
+      label: "Back",
+      route: "http://localhost:3001/dashboard",
+      icon: "/assets/icons/arrow-blue.png",
+    },
     // {
     //   label: "Buy Credits",
     //   route: "/credits",
