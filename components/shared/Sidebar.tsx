@@ -12,9 +12,13 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
     <div className="flex size-full flex-col gap-4">
+      <div className='flex items-center justify-start gap-4 text-3xl'>
       <Link href="/" className="sidebar-logo">
-        <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
+        <Image src="/assets/images/logo.png" alt="logo" width={50} height={28} />
       </Link>
+      <h2>Vivid Fusion</h2>
+      </div>
+
 
       <nav className="sidebar-nav">
         <SignedIn>

@@ -21,8 +21,10 @@ module.exports = {
 		  border: "hsl(var(--border))",
 		  input: "hsl(var(--input))",
 		  ring: "hsl(var(--ring))",
-		  background: "hsl(var(--background))",
-		  foreground: "hsl(var(--foreground))",
+		//   background: "hsl(var(--background))",
+		//   foreground: "hsl(var(--foreground))",
+		background: "#000000", // Black background
+        foreground: "#FFFFFF", // White text
 		  purple: {
 			100: "#F4F7FE",
 			200: "#BCB6FF",
